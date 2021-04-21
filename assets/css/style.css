@@ -7,6 +7,7 @@
     --secondary-font: monospace;
 
 }
+
 header {
     display: flex;
     flex-wrap: wrap;
@@ -145,13 +146,12 @@ main section{
     width: 100%;
 }
 
-.project-image-effect:hover{
+
+.project-image:hover .project-image-effect{
     opacity: 0.05;
     transition: 0.5s;
 }
-
-
-.project-image:hover .project-description-main{
+.project-image:hover .project-description-main {
     opacity: 1;
     transition: 0.5s;
 }
@@ -165,8 +165,8 @@ main section{
     position: absolute;
     opacity: 0;
     color:rgb(54, 51, 85);
-    margin-top: 100px;
-    padding: 20px;
+    padding-top: 100px;
+    padding-left: 50%;
 }
 
 .project-description-main h2{
@@ -236,6 +236,17 @@ main section{
     margin: 10px ;
 }
 
+.links a{
+    background-color: #f7c331;
+    padding: 30px;
+    border-radius: 50%;
+}
+
+.links a:hover{
+    background-color:#f7882f;
+    transition: 0.5s;
+}
+
 /* Footer Section */
 footer {
     background-color: var(--secondary-color);
@@ -245,6 +256,7 @@ footer h5{
     color: var(--primary-color);
     text-align: center;
 }
+
 
 @media screen and (max-width:1410px){
     main section{
